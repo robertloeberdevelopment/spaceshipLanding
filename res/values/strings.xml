@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Spaceship Landing</string>
+    <string name="action_settings"></string>
+    <string name="noInternetConnection">You\'re not connected with the internet. For this game you need an internet connection. Please check if your wifi is on. \nStart the app again when you have a connection.</string>
+    <string name="uitlegkop">Land your spaceship on the target</string>
+    <string name="uitleg">You are a member of an extra-terrestial intelligence. You and your spaceship are on a mission to help the humans to solve their problems everywhere on earth.
+   
+   \n\nBefore you enter the atmosphere, you receive your landing target from the mothership. Your target consists of a series of names, starting with a country. Every next name marks your target more specifically. As you are descending, the next name from your target list will show up on the map. Find this next location from the series, and navigate your ship towards it. At about 2000 meters, the target symbol will show up on the map.
+   
+   \n\nIf you do not find your next location, you will get lost. You can gain altitude again by pressing the red button of the Emergency Booster (E.B.). Be aware: there\'s only fuel for 10 seconds! The fuel of your steering rockets is limited too. 
+
+   \n\nThis landing task appeals to your geographical knowledge. When you succeed, you wil be promoted. Perhaps you will eventually become Admiral of the Fleet! Push \'start\' to begin your mission.</string>
+
+    <!-- let op: er moeten 7 plaatsen gevuld, bij minder gaat hij down!()pointer exeption). edit, laatste plaats is nummer post in Wordpress van de info op de site. Als 0, dan geen info, en geen knop voor info laten zien -->
+
+    <string-array name="country_place_place_place_lat_lng">
+        <item>Netherlands,Amsterdam,Amsterdam-Zuid,Olympisch Stadion,52.343455, 4.854197,0</item>
+        
+        <item>United States, New York, Hudson River,Statue of Liberty, 40.689306, -74.044254,0</item>     
+    
+        <item>Italy, Rome, Municipio I,Colosseum, 41.890245, 12.492159,0</item>
+        <item>Australia,Sydney,The Rocks,Opera House,-33.856862, 151.215292,0</item>
+        <item>India,Mumbai, Vile Parle East,Chhatrapati Shivaji International Airport,19.088667,72.867520,0</item>
+        <item>Finland, North side of the Gulf of Bothnia, Rovaniemi, Hotel Santa Claus, 66.502648, 25.731908,0</item>
+        <item>France,Paris, 7th Arr. (navigate to left!),Eiffel Tower,48.858314,2.294717,0</item>
+        <item>China, Chongging, Nan\'an, Tianwen Temple, 29.505621, 106.637108,0</item>
+        <item>Switzerland, Zürich, Fällanden, Zwicky Fabrik, 47.370625, 8.643163,0</item>
+        <item>Argentina, Buenos Aires, Almagro, Salon Canning (Tango),-34.592418, -58.427859,0</item>
+         <item>Italy,Florence,Fiesole,Cattedrale di Fiesole,43.807307, 11.292400,0</item>
+        <item>Angola, Luanda, Golfe, Enana Navegação Aérea,-8.862319, 13.249916,0</item>
+         <item>Netherlands, Amsterdam, Burgwallen Nieuwe Zijde, Dam Square, 52.373297, 4.892535,0</item>
+        <item>Sweden, Stockholm, Boo, Orminge Bibliothek,59.326849, 18.257114,0</item>
+        <item>Indonesia, Jakarta, Central Jakarta, Monumen Nasional,-6.173043, 106.826855,0</item>
+        <item>Mongolia, Ulaanbaatar, Zuunmod, Bogdkhan Uul, 47.814567, 106.959523,0</item>
+        <item>United Arab Emirates, Dubai, Mina Jebel Ali, Palm Jebel Ali, 25.009829, 54.987210,0</item>
+        <item>Iceland, Reykjavik,Seltjarnarnes, Medical Museum at Nesstofa,64.157627, -22.005208,0</item>
+        <item>Japan, Tokyo, Shinagawa, Haneda Airport,35.554602, 139.778483,0 </item>
+        <item>United States, Florida, Cocoa, Cape Canaveral, 28.388345, -80.603147,0</item>
+        <item>United Kingdom, London, Oxford, University of Oxford, 51.756614, -1.254629,0</item>
+        <item>France, Geneva, Chamonix, Alpes (Mont Blanc),45.832878, 6.869358,0</item>
+        <item>Ukraine, Black Sea, Odessa, Kolontiavs\'ka st.,46.476890, 30.708493,0</item>
+        <item>Canada, Ontario, Toronto, CN Tower,43.642582, -79.387025,0</item>
+        <item>United States, Las Vegas,Red Rock Canyon National Park, La Madre Mountain, 36.217029, -115.460934,0</item>
+        <item>India,Bangladesh,Manipur,Tengnoupal,24.384651,94.1470166,0</item>
+        <item>Russia, Moskou, Red Square, , 55.754093, 37.620859,0</item>
+        <item>Germany, Berlin, Potsdam, Jagervorstadt Sanssouci Palace, 52.404542, 13.038511,0</item>
+        <item>India,Mumbai,Premier Colony,Kohinoor City Hospital,19.076210,72.886214,0</item>
+       
+        <item>Indonesia,Papua New Guinea,Lae,Evangelical Lutheran Church (in Lae to the left),-6.7233620, 147.0203860, 0</item>
+        <item>Netherlands, Utrecht, Zuid, De Musketon, 52.064267, 5.135876,0</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top" >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+        
+        <ImageView
+            android:id="@+id/voorruit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/flying_saucer_window_800px" />
+        
+          <ImageView
+            android:id="@+id/steeringoval"
+            android:layout_width="140dp"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/steering_oval_120px" />
+          
+          <ImageView
+              android:id="@+id/klembord"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_alignParentBottom="true"
+              android:layout_marginBottom="-30dp"
+              android:layout_marginLeft="-70dp"
+              android:layout_toRightOf="@+id/gegevenslinksboven"
+              android:src="@drawable/klembord" />
+          
+        <ImageButton
+            android:id="@+id/omlaag"
+            android:layout_width="52dp"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/rechts"
+            android:background="@android:color/transparent"
+            android:paddingTop="5dp"
+            android:src="@drawable/scifi_pijl_neer_klein"
+            android:textColor="#00ccff"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/links"
+            android:layout_width="45dp"
+            android:layout_height="62dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14dp"
+            android:layout_toLeftOf="@+id/omlaag"
+            android:background="@android:color/transparent"
+            android:src="@drawable/scifi_pijl_links_klein"
+            android:textColor="#00ccff"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/omhoog"
+            android:layout_width="52dp"
+            android:layout_height="47dp"
+            android:layout_above="@+id/omlaag"
+            android:layout_toLeftOf="@+id/rechts"
+            android:background="@android:color/transparent"
+            android:src="@drawable/scifi_pijl_op_klein"
+            android:textColor="#00ccff"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/rechts"
+            android:layout_width="45dp"
+            android:layout_height="62dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/links"
+            android:background="@android:color/transparent"
+            android:paddingBottom="0dp"
+            android:src="@drawable/scifi_pijl_rechts_klein"
+            android:textColor="#00ccff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/gegevenslinksboven"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:text="altitude"
+            android:textColor="#49FE02"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/alarmmessages"
+            android:layout_width="360dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/gegevenslinksboven"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:gravity="center_horizontal"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="Alarm"
+            android:textColor="#FF7B94"
+            android:textSize="17sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignBottom="@+id/gegevenslinksboven"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/start_button"
+            android:text="start"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+        
+         <Button
+             android:id="@+id/emergencybooster"
+             android:layout_width="42dp"
+             android:layout_height="42dp"
+             android:layout_alignLeft="@+id/gegevenslinksboven"
+             android:layout_below="@+id/omhoog"
+             android:layout_marginLeft="10dp"
+             android:background="@drawable/emergencybooster_button"
+             android:text="E.B."
+             android:textColor="#FACECE"
+             android:textSize="14dp" />
+         
+           <TextView
+             android:id="@+id/targetlocation"
+             android:layout_width="200dp"
+             android:layout_height="80dp"
+             android:layout_alignLeft="@+id/emergencybooster"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="20dp"
+             android:layout_weight="1"
+             android:alpha=".6"
+             android:shadowColor="#000000"
+             android:shadowDx="1"
+             android:shadowDy="2"
+             android:shadowRadius="2"
+             android:textColor="#71FDF8"
+             android:textSize="15dp"
+             android:textStyle="bold|italic" />
+    
+     <TextView
+             android:id="@+id/naamOnder"
+             android:layout_width="220dp"
+             android:layout_height="15dp"
+             android:layout_above="@+id/sterren"
+             android:layout_alignLeft="@+id/sterren"
+             android:layout_weight="1"
+             android:gravity="center_horizontal"
+             android:text="pilot: apprentice"
+             android:textColor="#49FE02"
+             android:textSize="11dp" />
+        
+  <ImageView
+      android:id="@+id/sterren"
+      android:layout_width="220dp"
+      android:layout_height="12dp"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:gravity="center_horizontal"
+      android:src="@drawable/sterren_ketelbinkie_120px" />
+ 
+        <TextView
+            android:id="@+id/precachescherm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:gravity="center_horizontal"
+            android:paddingTop="50dp"
+            android:text="precache scherm"
+            android:textColor="#49FE02"
+            android:textSize="18dp"
+            android:visibility="gone" />
+        
+        <ImageView
+            android:id="@+id/countdown"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+
+         <ImageView
+             android:id="@+id/oorkonde"
+             android:layout_width="300dp"
+             android:layout_height="300dp"
+             android:layout_alignBottom="@+id/omhoog"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="5dp"
+             android:visibility="gone" />
+
+       
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scoreoverlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/background"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:background="#90000000"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="320dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.1"
+            android:text="Hier de Scores"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/newgame"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/showtarget"
+            android:layout_alignParentBottom="true"
+            android:text="new game"
+             
+            android:textColor="#ffffff"
+            android:textSize="11dp" />
+
+        <Button
+            android:id="@+id/repeat"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/showtarget"
+            android:layout_alignParentRight="true"
+            android:text="try again"
+           
+            android:textColor="#ffffff"
+            android:textSize="11dp" />
+
+        <Button
+            android:id="@+id/showtarget"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/newgame"
+            android:layout_alignParentRight="true"
+            android:text="show target"
+           
+            android:textColor="#ffffff"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/totalscore"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/score"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.1"
+            android:text="total score"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+    
+     <LinearLayout
+         android:id="@+id/uitlegoverlay"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_marginLeft="45dp"
+         android:layout_marginRight="55dp"
+         android:background="#F2ffffff"
+         android:orientation="vertical"
+         android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/uitlegkop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/uitlegkop"
+            android:textColor="#000000"
+            android:textSize="16sp" 
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/uitleg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:lineSpacingMultiplier="1.0"
+            android:text="@string/uitleg"
+            android:textColor="#000000"
+            android:textSize="11sp" />
+        
+    </LinearLayout>
+    
+
+</FrameLayout>
